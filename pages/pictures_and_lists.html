@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изображения и списки</title>
+    <style>
+          a:hover {
+            background-color: greenyellow;
+        }
+
+        a.active {
+         background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+<a id="up"></a>
+    <h1>Изображения и списки</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="pages/pictures_and_lists.html" class="active">Изображения и списки</a></li>
+                <li><a href="pages/table_and_big_pic.html">Таблица и большое изображение</a></li>
+                <li><a href="pages/forms_contacts_orig.html">Форма для отправки контактных данных</a></li>
+                <li><a href="pages/forms_contacts_orig.html#original_form">Форма для отправки оригинальных данных</a></li>
+                <li><a href="pages/dom_js.html">DOM_JS. Считываем информацию из DOM</a></li>
+                <li><a href="pages/change_lg.html">Изменяем кириллицу на латиницу по клику</a></li>
+                <li><a href="pages/algtask.html">Решение алгоритмической задачи</a></li>
+                <li><a href="https://www.hse.ru/en/" target="_blank">Внешняя ссылка</a></li>
+                <li><a href="https://www.hse.ru/en/">
+                    <img src="images/graphic_link.png" width="50" height="50" alt="Графическая ссылка">
+                </a></li>
+            </ul>
+        </nav>
+        <h2>Содержание страницы</h2>
+    <nav>
+        <ul>
+            <li><a href="#numbers">Нумерованный список</a></li>
+            <li><a href="#markers">Маркированный список</a></li>
+            <li><a href="#complex">Вложенный список</a></li>
+            <li><a href="#images">Изображения</a></li>
+        </ul>
+    </nav>
+    <hr color="violet">
+    <h3 id="numbers">Нумерованный список</h3>
+    <ol>
+        <li>Зима</li>
+        <li>Весна</li>
+        <li>Лето</li>
+        <li>Осень</li>
+    </ol>
+    <a href="pictures_and_lists.html#up">Наверх</a>
+    <a href="pictures_and_lists.html#numbers">Нумерованный список</a>
+    <a href="pictures_and_lists.html#markers">Маркированный список</a>
+    <a href="pictures_and_lists.html#complex">Вложенный список</a>
+    <a href="pictures_and_lists.html#images">Изображения</a>
+    <a href="pictures_and_lists.html#down">Вниз</a>
+
+    <h3 id="markers">Маркированный список</h3>
+    <ul>
+<li><b>Первый</b> элемент списка</li>
+<li><i>Второй</i> элемент списка</li>
+<li><s>Второй</s> Третий элемент списка</li>
+<li><u>Четвертый</u> элемент списка</li>
+    </ul>
+    <a href="pictures_and_lists.html#up">Наверх</a>
+    <a href="pictures_and_lists.html#numbers">Нумерованный список</a>
+    <a href="pictures_and_lists.html#markers">Маркированный список</a>
+    <a href="pictures_and_lists.html#complex">Вложенный список</a>
+    <a href="pictures_and_lists.html#images">Изображения</a>
+    <a href="pictures_and_lists.html#down">Вниз</a>
+
+    <h3 id="complex">Вложенный список</h3>
+    <ul type="circle">
+        <font color="blue"> <li> Стороны света
+            <ol>
+                <li> Север </li>
+                <li> Юг </li>
+                <li> Запад </li>
+                <li> Восток</li>
+                </li>
+            </ol></font>
+        <font color="red"> <li> Фрукты
+            <ol start="1">
+                <li> Яблоко</li>
+                <li> Мандарин</li>
+                <li> Банан</li>
+            </ol></font>
+        <font color="green"><li> Овощи
+        
+            <ol start="1">
+                <li> Морковь</li>
+                <li> Лук</li>
+                <li> Капуста</li>
+            </ol></font>
+        <font color="orange"><li> Зимние месяцы
+        
+            <ol start="1">
+                <li> Декабрь</li>
+                <li> Январь</li>
+                <li> Февраль</li>
+            </ol></font>
+    </ul>
+    <a href="pictures_and_lists.html#up">Наверх</a>
+    <a href="pictures_and_lists.html#numbers">Нумерованный список</a>
+    <a href="pictures_and_lists.html#markers">Маркированный список</a>
+    <a href="pictures_and_lists.html#complex">Вложенный список</a>
+    <a href="pictures_and_lists.html#images">Изображения</a>
+    <a href="pictures_and_lists.html#down">Вниз</a>
+
+    <h3 id="images">Изображения</h3>
+<img
+  src="images/old_wallpapers.jpg"
+  alt="Старые обои Windows по умолчанию"
+  width="400"
+  height="341" />
+  <figcaption>Старые обои Windows по умолчанию</figcaption>
+  <br>
+  <img
+  src="images/new_wallpapers.jpg"
+  alt="Новые обои Windows по умолчанию"
+  width="400"
+  height="341" />
+  <figcaption>Новые обои Windows по умолчанию</figcaption>
+  <p><a href="big_picture.html" target="_blank"><img src="images/fish.jpg" width= "100px" alt="" /></p>
+    <figcaption>фото - ссылка</figcaption>
+  <br>
+    <a href="pictures_and_lists.html#up">Наверх</a>
+    <a href="pictures_and_lists.html#numbers">Нумерованный список</a>
+    <a href="pictures_and_lists.html#markers">Маркированный список</a>
+    <a href="pictures_and_lists.html#complex">Вложенный список</a>
+    <a href="pictures_and_lists.html#images">Изображения</a>
+    <a href="pictures_and_lists.html#down">Вниз</a>
+<a id="down"></a>
+</body>
+</html>

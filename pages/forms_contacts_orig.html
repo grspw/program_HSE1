@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы для отправки контактных и оригинальных данных</title>
+    <style>
+          a:hover {
+            background-color: greenyellow;
+        }
+
+        a.active {
+         background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+     <h1>Формы для отправки контактных и оригинальных данных</h1>
+    <h2>Навигация</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="pages/pictures_and_lists.html">Изображения и списки</a></li>
+                <li><a href="pages/table_and_big_pic.html">Таблица и большое изображение</a></li>
+                <li><a href="pages/forms_contacts_orig.html" class="active">Форма для отправки контактных данных</a></li>
+                <li><a href="pages/forms_contacts_orig.html#original_form" class="active">Форма для отправки оригинальных данных</a></li>
+                <li><a href="pages/dom_js.html">DOM_JS. Считываем информацию из DOM</a></li>
+                <li><a href="pages/change_lg.html">Изменяем кириллицу на латиницу по клику</a></li>
+                <li><a href="pages/algtask.html">Решение алгоритмической задачи</a></li>
+                <li><a href="https://www.hse.ru/en/" target="_blank">Внешняя ссылка</a></li>
+                <li><a href="https://www.hse.ru/en/">
+                    <img src="images/graphic_link.png" width="50" height="50" alt="Графическая ссылка">
+                </a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul>
+                <li><a href="#personal_form">Форма для отправки личных данных</a></li>
+                <li><a href="#original_form">Форма для отправки оригинальных данных</a></li>
+            </ul>
+        </nav>
+
+        <h2 id="personal_form">Форма для отправки контактных данных</h2>
+<form action="https://www.google.com" id="UserEnter1" name="UserEnter1" target="_blank">
+
+     <p> Введите Ваше имя <input type="Text" name="name" value="Иван"></p>
+    <p> Введите Вашу фамилию <input type="Text" name="surname" value="Иванов"></p>
+    <p> Введите номер Вашей группы <input type="Text" name="group" value="123"></p>
+    <p> Введите Ваш номер телефона <input type="tel" name="Fnumber" value="+7 (123)-456-78-90"></p>
+    <p> Введите адрес Вашей электронной почты <input type="Text" name="email" value="example@mail.com"></p>
+    <p>Укажите дату отправки сообщения: <input name="user_date" type="date" value='2000-01-01'></p>
+  <p><input type="submit" value="Отправить">
+   <input type="reset" value="Очистить"></p>
+</form>
+
+<h2 id="original_form">Форма для отправки оригинальных данных</h2>
+<form action="https://www.google.com" id="UserEnter2" name="UserEnter2" target="_blank">
+
+    <p> Введите Ваше имя <input type="Text" name="name" value="Иван"></p>
+    <p> Введите Ваш возраст <input type="number" name="age" min="0" max="100" value="1"></p>
+    <input type="hidden" name="hideparametr"     value="123">
+    <p><b>Какой иностранный язык Вы знаете:</b><Br>
+   <input type="radio" name="language" value="en" checked> Английский<Br>
+   <input type="radio" name="language" value="span"> Испанский<Br>
+   <input type="radio" name="language" value="ger"> Немецкий<Br>
+        <input type="radio" name="language" value="jap"> Японский<Br>
+  </p>
+  <p>Читаете ли вы книги на иностранном языке<input type="checkbox" name="books"  value="yes"></p>
+  <p>Дата: <input name="user_date" type="date" value='2000-01-01'></p>
+  <p>Пароль: <input name="password" size=9 type="Password" value="12345"></p>
+  <p>Комментарий<Br>
+   <textarea name="comment" cols="40" rows="3">Мой комментарий.</textarea></p>
+   <input name="ID" size=9 type="hidden" value="123">
+  <p><input type="submit" value="Отправить">
+   <input type="reset" value="Очистить"></p>
+</form>
+
+     </body>
+</html>

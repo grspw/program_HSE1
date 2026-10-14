@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица и большое изображение</title>
+    <style>
+          a:hover {
+            background-color: greenyellow;
+        }
+
+        a.active {
+         background-color: magenta;
+        }
+
+        table {
+            background-image: url(images/big_background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+   <h1>Таблица и большое изображение</h1> 
+   <h2>Навигация</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="pages/pictures_and_lists.html">Изображения и списки</a></li>
+                <li><a href="pages/table_and_big_pic.html" class="active">Таблица и большое изображение</a></li>
+                <li><a href="pages/forms_contacts_orig.html">Форма для отправки контактных данных</a></li>
+                <li><a href="pages/forms_contacts_orig.html#original_form">Форма для отправки оригинальных данных</a></li>
+                <li><a href="pages/dom_js.html">DOM_JS. Считываем информацию из DOM</a></li>
+                <li><a href="pages/change_lg.html">Изменяем кириллицу на латиницу по клику</a></li>
+                <li><a href="pages/algtask.html">Решение алгоритмической задачи</a></li>
+                <li><a href="https://www.hse.ru/en/" target="_blank">Внешняя ссылка</a></li>
+                <li><a href="https://www.hse.ru/en/">
+                    <img src="images/graphic_link.png" width="50" height="50" alt="Графическая ссылка">
+                </a></li>
+            </ul>
+<br>
+<h2 align=center>Таблица</h2>
+        <table width="600" align="center" bgcolor="#daded7"
+       border="2" color="red" cellspacing="15" cellpadding="10">
+
+    <tr height="100">
+        <td align="right" valign="top">
+            <img src="images/hat.jpg" height="50" alt="Цилиндр"><br>
+            <font size="2">Надпись под рисунком</font>
+        </td>
+
+        <td></td>
+
+        <td background="images/table_background.jpg">
+            Фон
+        </td>
+    </tr>
+
+    <tr height="20">
+        <td colspan="3" align="center">Объединённая ячейка</td>
+    </tr>
+
+    <tr>
+        <td width="400" height="300">Ячейка 400×300</td>
+        <td bgcolor="#5eb370">Зелёный фон</td>
+    </tr>
+
+    <tr>
+        <td width="50%" height="200">
+            <table border="1" width="100%" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td><p><a href="big_picture_cows.html" target="_blank"><img src="images/cows.jpg" width= "90" height="90" alt="Вложенная + фото-ссылка" /></p></td>
+                    <td>Ячейка 2</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 3</td>
+                    <td>Ячейка 4</td>
+                </tr>
+            </table>
+        </td>
+
+        <td width="50%" align="right" valign="middle">
+            <img src="images/fish2.jpg" hspace="15" vspace="15" alt="Справа" width="300" >
+        </td>
+    </tr>
+
+</table>
+
+  </body>
+</html>

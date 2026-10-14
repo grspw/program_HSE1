@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+          a:hover {
+            background-color: greenyellow;
+        }
+
+        a.active {
+         background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <h1>Решение алгоритмической задачи</h1>
+    <h2>Навигация</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="../pages/pictures_and_lists.html">Изображения и списки</a></li>
+                <li><a href="../pages/table_and_big_pic.html">Таблица и большое изображение</a></li>
+                <li><a href="../pages/forms_contacts_orig.html">Форма для отправки контактных данных</a></li>
+                <li><a href="../pages/forms_contacts_orig.html#original_form">Форма для отправки оригинальных данных</a></li>
+                <li><a href="../pages/dom_js.html">DOM_JS. Считываем информацию из DOM</a></li>
+                <li><a href="../pages/change_lg.html">Изменяем кириллицу на латиницу по клику</a></li>
+                <li><a href="../pages/algtask.html" class="active">Решение алгоритмической задачи</a></li>
+                <li><a href="https://www.hse.ru/en/" target="_blank">Внешняя ссылка</a></li>
+                <li><a href="https://www.hse.ru/en/">
+                    <img src="../images/graphic_link.png" width="50" height="50" alt="Графическая ссылка">
+                </a></li>
+            </ul>
+        </nav>
+
+<div class="container">
+    <h3>Размен суммы (500, 100, 10, 2)</h3>
+    <p>1006. Известна денежная сумма. Разменять её купюрами 500, 100, 10 и монетой 2 руб., если это возможно.</p>
+    <label for="amount">Введите сумму в рублях:</label>
+    <input type="number" id="amount" min="0" placeholder="Например, 1264">
+    <button onclick="exchangeMoney()">Разменять</button>
+    <div id="result" class="result"></div>
+</div>
+
+<script src="../scripts/alg.js"></script>
+
+</body>
+
+</html>
